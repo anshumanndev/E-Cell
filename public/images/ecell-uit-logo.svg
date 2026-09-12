@@ -1,0 +1,89 @@
+<svg width="240" height="280" viewBox="0 0 240 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- E-Cell UIT Official Logo Vector -->
+  <g id="ECellLogo">
+    <!-- 'E' Letter Path in Deep Teal -->
+    <path
+      d="M125 90H80C66.7452 90 56 100.745 56 114V146C56 159.255 66.7452 170 80 170H108"
+      stroke="#164E63"
+      stroke-width="15"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M58 130H102"
+      stroke="#164E63"
+      stroke-width="14"
+      stroke-linecap="round"
+    />
+
+    <!-- 'C' Letter Path in Vibrant Teal/Cyan Interlocking -->
+    <path
+      d="M142 128C136 122 124 118 110 120C92 123 80 138 80 156C80 174 94 188 114 188C128 188 138 182 144 174"
+      stroke="#0D9488"
+      stroke-width="15"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Glowing Light Bulb in Golden Amber at Center -->
+    <g id="BulbGroup" transform="translate(112, 140)">
+      <!-- Radiant Amber Rays -->
+      <path d="M0 -34L0 -42" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-15 -28L-22 -35" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M15 -28L22 -35" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-24 -14L-32 -16" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M24 -14L32 -16" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Bulb Outer Glass Contour -->
+      <path
+        d="M0 -28C-10 -28 -17 -20 -17 -11C-17 -4 -13 1 -9 6V14C-9 15.5 -7.5 17 -6 17H6C7.5 17 9 15.5 9 14V6C13 1 17 -4 17 -11C17 -20 10 -28 0 -28Z"
+        fill="#FEF3C7"
+        stroke="#D97706"
+        stroke-width="3.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+      <!-- Filament Loop -->
+      <path
+        d="M-5 -12C-5 -18 -2 -22 0 -22C2 -22 5 -18 5 -12"
+        stroke="#F59E0B"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+
+      <!-- Screw Base -->
+      <path d="M-6 20H6" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-4 24H4" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-2 28H2" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Typography: E-CELL UIT -->
+    <text
+      x="120"
+      y="228"
+      text-anchor="middle"
+      font-family="'Space Grotesk', 'Sora', sans-serif"
+      font-size="21"
+      font-weight="800"
+      letter-spacing="4"
+      fill="#0F4C5C"
+    >
+      E-CELL UIT
+    </text>
+
+    <!-- Subtitle: Empowering Tomorrow's Founder -->
+    <text
+      x="120"
+      y="248"
+      text-anchor="middle"
+      font-family="'Inter', sans-serif"
+      font-size="10.5"
+      font-weight="600"
+      letter-spacing="0.4"
+      fill="#334155"
+    >
+      Empowering Tomorrow's Founder
+    </text>
+  </g>
+</svg>

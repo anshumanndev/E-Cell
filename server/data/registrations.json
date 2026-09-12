@@ -1,0 +1,45 @@
+[
+  {
+    "id": "reg-1789151013567",
+    "registrationId": "ILLUM-2026-7798",
+    "fullName": "Aryan Dev",
+    "email": "aryan@example.com",
+    "phone": "9876543210",
+    "college": "UIT Prayagraj",
+    "course": "B.Tech CSE",
+    "year": "2nd Year",
+    "city": "Prayagraj",
+    "interests": [
+      "Startup",
+      "Innovation"
+    ],
+    "projectTitle": "",
+    "teamSize": "1",
+    "ambassadorCodeUsed": "",
+    "amountPaid": 799,
+    "paymentStatus": "Confirmed",
+    "registeredAt": "2026-09-11T18:23:33.567Z"
+  },
+  {
+    "id": "reg-101",
+    "registrationId": "ILLUM-2026-8491",
+    "fullName": "Arpita Mishra",
+    "email": "arpita.m@example.com",
+    "phone": "+91 98765 43210",
+    "college": "United Institute of Technology",
+    "course": "B.Tech Computer Science",
+    "year": "3rd Year",
+    "city": "Prayagraj",
+    "interests": [
+      "Entrepreneurship",
+      "Innovation",
+      "Technology"
+    ],
+    "projectTitle": "AI Workflow Agent for Campus Operations",
+    "teamSize": "1",
+    "ambassadorCodeUsed": "CA26ZTBUW",
+    "amountPaid": 699,
+    "paymentStatus": "Confirmed",
+    "registeredAt": "2026-09-11T18:21:19.375Z"
+  }
+]

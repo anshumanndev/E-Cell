@@ -1,0 +1,254 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #FAF8F5;
+  --bg-warm: #F5F0E8;
+  --bg-secondary: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --teal-primary: #0E7490;
+  --teal-vibrant: #0D9488;
+  --cyan-bright: #06B6D4;
+  --amber-primary: #D97706;
+  --amber-bright: #F59E0B;
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --border-subtle: rgba(14, 116, 144, 0.12);
+}
+
+@layer base {
+  html {
+    /* Warm ivory fallback — visible if background component hasn't mounted yet */
+    background-color: #FDFCE4;
+  }
+
+  body {
+    /* Transparent so the fixed GlobalAnimatedBackground shows through */
+    background-color: transparent;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', 'Sora', sans-serif;
+  }
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 116, 144, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 116, 144, 0.5);
+}
+
+/* Light Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(14, 116, 144, 0.14);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(14, 116, 144, 0.1);
+  box-shadow: 0 4px 20px -5px rgba(15, 23, 42, 0.04);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(14, 116, 144, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px -8px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(14, 116, 144, 0.35);
+  box-shadow: 0 20px 40px -15px rgba(14, 116, 144, 0.12);
+}
+
+/* Text Gradient Utilities tailored to E-Cell Teal + Gold */
+.text-gradient-teal {
+  background: linear-gradient(135deg, #164E63 0%, #0E7490 50%, #0D9488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D97706 0%, #F59E0B 70%, #FBBF24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #164E63 0%, #0E7490 40%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-illuminate {
+  background: linear-gradient(135deg, #0E7490 0%, #0D9488 40%, #06B6D4 70%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================
+   GLOBAL ANIMATED BACKGROUND — CSS KEYFRAMES
+   All animations use only transform + opacity (GPU-only)
+   No top/left/width/height changes for performance.
+   ========================================================== */
+
+/* Blob 1: Warm golden glow — top-left origin, 40s drift */
+@keyframes blobFloat1 {
+  0%   { transform: translate(0%, 0%) scale(1); }
+  25%  { transform: translate(10%, 20%) scale(1.07); }
+  50%  { transform: translate(6%, 35%) scale(1.03); }
+  75%  { transform: translate(-4%, 18%) scale(1.09); }
+  100% { transform: translate(0%, 0%) scale(1); }
+}
+
+/* Blob 2: Teal/green accent — bottom-right origin, 55s drift */
+@keyframes blobFloat2 {
+  0%   { transform: translate(0%, 0%) scale(1); }
+  30%  { transform: translate(-12%, -18%) scale(1.1); }
+  60%  { transform: translate(-8%, -30%) scale(0.95); }
+  80%  { transform: translate(-18%, -12%) scale(1.05); }
+  100% { transform: translate(0%, 0%) scale(1); }
+}
+
+/* Blob 3: Champagne accent — top-right, 32s drift */
+@keyframes blobFloat3 {
+  0%   { transform: translate(0%, 0%) scale(1); }
+  40%  { transform: translate(-15%, 25%) scale(1.08); }
+  70%  { transform: translate(-8%, 15%) scale(0.97); }
+  100% { transform: translate(0%, 0%) scale(1); }
+}
+
+/* Blob 4: Subtle center ambient, 48s slow pulse */
+@keyframes blobFloat4 {
+  0%   { transform: translate(-50%, -50%) scale(1); opacity: 0.35; }
+  50%  { transform: translate(-50%, -50%) scale(1.12); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.35; }
+}
+
+/* E-Cell Watermark floating animation */
+@keyframes watermarkFloat {
+  0%   { opacity: 0.025; transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+  33%  { opacity: 0.05;  transform: translate(-50%, -50%) scale(1.03) rotate(0.5deg); }
+  66%  { opacity: 0.035; transform: translate(-50%, -50%) scale(1.01) rotate(-0.3deg); }
+  100% { opacity: 0.025; transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+}
+
+/* Page content entry animation */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: pageEnter 0.4s ease-out forwards;
+}
+
+/* Soft luminous ambient pulse */
+@keyframes ambientLuminousGlow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.06);
+  }
+}
+
+.ambient-luminous-glow {
+  animation: ambientLuminousGlow 9s ease-in-out infinite;
+}
+
+/* Watermark animation class */
+.watermark-animate {
+  animation: watermarkFloat 42s ease-in-out infinite;
+}
+
+/* Global background blob classes */
+.bg-blob-1 {
+  animation: blobFloat1 40s ease-in-out infinite;
+  will-change: transform;
+}
+
+.bg-blob-2 {
+  animation: blobFloat2 55s ease-in-out infinite;
+  will-change: transform;
+}
+
+.bg-blob-3 {
+  animation: blobFloat3 32s ease-in-out infinite;
+  will-change: transform;
+}
+
+.bg-blob-4 {
+  animation: blobFloat4 48s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* ==========================================================
+   ACCESSIBILITY — Respect prefers-reduced-motion
+   ========================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .bg-blob-1,
+  .bg-blob-2,
+  .bg-blob-3,
+  .bg-blob-4,
+  .watermark-animate,
+  .ambient-luminous-glow {
+    animation: none !important;
+  }
+
+  .watermark-animate {
+    opacity: 0.03 !important;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg) !important;
+  }
+}
+
+/* New full-page continuous scrolling animation for E-Cell watermark */
+@keyframes watermarkScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 500px;
+  }
+}
+.animate-watermark-scroll {
+  animation: watermarkScroll 120s linear infinite;
+}
