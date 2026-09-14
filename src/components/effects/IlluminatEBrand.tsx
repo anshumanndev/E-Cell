@@ -1,4 +1,5 @@
 import React from 'react';
+import { IlluminateSymbol } from './IlluminateSymbol';
 
 interface IlluminatEBrandProps {
   className?: string;
@@ -33,11 +34,7 @@ export const IlluminatEBrand: React.FC<IlluminatEBrandProps> = ({
     <span className={`inline-flex items-center gap-1 sm:gap-2 ${className}`}>
       <span className={`${textSize} font-sans font-black tracking-tight ${colorClass} flex items-center`} style={{ letterSpacing: '-0.02em' }}>
         I
-        <img 
-          src="/images/symbol.png" 
-          alt="LL" 
-          className="inline-block h-[0.8em] w-auto mx-1 object-contain" 
-        />
+        <IlluminateSymbol className="inline-block h-[0.9em] w-auto mx-1" />
         UMINATE
       </span>
     </span>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ECellLogo } from '../effects/ECellLogo';
+import { IlluminateSymbol } from '../effects/IlluminateSymbol';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -61,11 +62,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
             >
               <div className="flex items-center text-3xl font-display font-bold tracking-tight text-slate-900 mb-1">
                 <span>I</span>
-                <img 
-                  src="/images/symbol.png" 
-                  alt="ll" 
-                  className="inline-block h-[0.8em] w-auto mx-[0.05em] object-contain" 
-                />
+                <IlluminateSymbol className="inline-block h-[0.9em] w-auto mx-[0.05em]" />
                 <span>uminat</span>
                 <span className="text-teal-700">E</span>
               </div>
