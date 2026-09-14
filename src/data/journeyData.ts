@@ -93,7 +93,7 @@ export const whyIlluminateChapters = [
   },
   {
     id: "build",
-    title: "BUILD",
+    title: "Learn how to BUILD",
     number: "04",
     subtitle: "Hands-on MVP Sprints",
     description: "Transform raw ideas into working prototypes with live guidance, API credits, and structural feedback from seasoned engineering leads.",
@@ -101,7 +101,7 @@ export const whyIlluminateChapters = [
   },
   {
     id: "pitch",
-    title: "PITCH",
+    title: "Learn how to PITCH",
     number: "05",
     subtitle: "Spotlight & Investor Feedback",
     description: "Step onto the ILLUMINATE stage to pitch your venture hypothesis before jury panels and receive candid, actionable critique.",
@@ -109,7 +109,7 @@ export const whyIlluminateChapters = [
   },
   {
     id: "lead",
-    title: "LEAD",
+    title: "Learn how to LEAD",
     number: "06",
     subtitle: "Lead the Innovation Era",
     description: "Cultivate the conviction, organizational agility, and communication prowess required to rally teams and build movements.",
