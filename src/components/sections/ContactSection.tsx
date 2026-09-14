@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageSquare, CheckCircle2 } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
@@ -72,13 +72,21 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-sm text-slate-600">
-                <Phone size={18} className="text-teal-600 shrink-0" />
-                <div>
-                  <p className="font-semibold text-slate-900">Phone Support</p>
-                  <a href={`tel:${siteConfig.contactPhone}`} className="text-xs text-teal-700 hover:underline font-mono">
-                    {siteConfig.contactPhone}
-                  </a>
+              <div className="flex items-start gap-3 text-sm text-slate-600">
+                <Phone size={18} className="text-teal-600 shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-3">
+                  <div>
+                    <p className="font-semibold text-slate-900">Campus Ambassador</p>
+                    <a href="tel:+916386087995" className="text-xs text-teal-700 hover:underline font-mono">
+                      +91 63860 87995
+                    </a>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-slate-900">Head of E-Cell</p>
+                    <a href="tel:+918953615232" className="text-xs text-teal-700 hover:underline font-mono">
+                      +91 89536 15232
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
