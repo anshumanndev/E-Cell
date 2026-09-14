@@ -93,9 +93,15 @@ export const Footer: React.FC = () => {
                 <MapPin size={14} className="text-[#0E7490] shrink-0 mt-0.5" />
                 <span>{siteConfig.location}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone size={14} className="text-[#0E7490] shrink-0" />
-                <span>{siteConfig.contactPhone}</span>
+              <div className="flex flex-col gap-1.5">
+                <div className="flex items-center gap-2">
+                  <Phone size={14} className="text-[#0E7490] shrink-0" />
+                  <span>Campus Ambassador: +91 63860 87995</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone size={14} className="text-[#0E7490] shrink-0 opacity-0" />
+                  <span>Head of E-Cell: +91 89536 15232</span>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="text-[#0E7490] shrink-0" />
