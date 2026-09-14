@@ -62,11 +62,13 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
             >
               <div className="flex items-center text-3xl font-display font-bold tracking-tight text-slate-900 mb-1">
                 <span>I</span>
-                <img 
-                  src="/images/lamp-symbol.png" 
-                  alt="ll" 
-                  className="inline-block h-[0.9em] w-auto mx-[0.05em] object-contain" 
-                />
+                <div className="relative flex items-center justify-center mx-[0.05em] h-[1em] w-[0.8em]">
+                  <img 
+                    src="/images/lamp-symbol.png" 
+                    alt="ll" 
+                    className="absolute h-[1.5em] max-w-none w-auto object-contain -translate-y-[0.1em]" 
+                  />
+                </div>
                 <span>uminat</span>
                 <span className="text-teal-700">E</span>
               </div>

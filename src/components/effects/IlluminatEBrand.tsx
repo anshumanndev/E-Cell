@@ -34,11 +34,13 @@ export const IlluminatEBrand: React.FC<IlluminatEBrandProps> = ({
     <span className={`inline-flex items-center gap-1 sm:gap-2 ${className}`}>
       <span className={`${textSize} font-sans font-black tracking-tight ${colorClass} flex items-center`} style={{ letterSpacing: '-0.02em' }}>
         I
-        <img 
-          src="/images/lamp-symbol.png" 
-          alt="LL" 
-          className="inline-block h-[0.9em] w-auto mx-1 object-contain" 
-        />
+        <div className="relative flex items-center justify-center mx-[0.05em] h-[1em] w-[0.8em]">
+          <img 
+            src="/images/lamp-symbol.png" 
+            alt="LL" 
+            className="absolute h-[1.5em] max-w-none w-auto object-contain -translate-y-[0.1em]" 
+          />
+        </div>
         UMINATE
       </span>
     </span>
