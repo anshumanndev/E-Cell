@@ -35,7 +35,7 @@ export const IlluminatEBrand: React.FC<IlluminatEBrandProps> = ({
       <span className={`${textSize} font-sans font-black tracking-tight ${colorClass} flex items-center`} style={{ letterSpacing: '-0.02em' }}>
         I
         <img 
-          src="/images/symbol.png" 
+          src="/images/lamp-symbol.png" 
           alt="LL" 
           className="inline-block h-[0.9em] w-auto mx-1 object-contain" 
         />
