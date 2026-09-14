@@ -37,14 +37,6 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com"
   },
   {
-    id: "team-4",
-    name: "General Secretary",
-    role: "Administration & Outreach",
-    department: "Leadership",
-    isVerified: false,
-    linkedin: "https://linkedin.com"
-  },
-  {
     id: "team-5",
     name: "Head of Technical",
     role: "Web & Digital Platforms",
@@ -77,18 +69,42 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://linkedin.com"
   },
   {
-    id: "team-9",
-    name: "Head of Marketing",
-    role: "Content & Community Growth",
+    id: "team-11",
+    name: "Campus Ambassador",
+    role: "Outreach & Networking",
+    department: "PR & Sponsorship",
+    isVerified: false,
+    linkedin: "https://linkedin.com"
+  },
+  {
+    id: "team-12",
+    name: "UI/UX Designer",
+    role: "Visual & Product Design",
+    department: "Design",
+    isVerified: false,
+    linkedin: "https://linkedin.com"
+  },
+  {
+    id: "team-13",
+    name: "UI/UX Designer",
+    role: "Visual & Product Design",
+    department: "Design",
+    isVerified: false,
+    linkedin: "https://linkedin.com"
+  },
+  {
+    id: "team-14",
+    name: "Head of Content",
+    role: "Copywriting & Strategy",
     department: "Marketing",
     isVerified: false,
     linkedin: "https://linkedin.com"
   },
   {
-    id: "team-10",
-    name: "Head of Operations",
-    role: "Logistics & Hospitality",
-    department: "Operations",
+    id: "team-15",
+    name: "Social Media Manager",
+    role: "Digital Presence & Growth",
+    department: "Marketing",
     isVerified: false,
     linkedin: "https://linkedin.com"
   }
