@@ -29,17 +29,12 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         >
           {/* Header */}
           <div className="flex items-center justify-between border-b border-slate-100 pb-4">
-            <Link 
-              to="/" 
-              onClick={() => {
-                onClose();
-                if (window.location.pathname === '/') {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-              }}
+            <a 
+              href="/#hero" 
+              onClick={onClose}
             >
               <ECellLogo size="sm" showSubtitle={true} />
-            </Link>
+            </a>
             <button
               onClick={onClose}
               aria-label="Close Menu"
