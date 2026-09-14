@@ -19,7 +19,7 @@ export const workshopsData: Workshop[] = [
   },
   {
     id: "pitch-perfect",
-    title: "Pitch Perfect",
+    title: "LEARN HOW TO Pitch Perfect",
     tagline: "Master storytelling and investor-grade pitch delivery.",
     duration: "120 Mins",
     level: "All Levels",
@@ -35,7 +35,7 @@ export const workshopsData: Workshop[] = [
   },
   {
     id: "build-and-validate",
-    title: "Build & Validate",
+    title: "LEARN HOW TO Build & Validate",
     tagline: "Rapid prototyping and iterative MVP development.",
     duration: "120 Mins",
     level: "Intermediate",
@@ -51,7 +51,7 @@ export const workshopsData: Workshop[] = [
   },
   {
     id: "brand-your-idea",
-    title: "Brand Your Idea",
+    title: "LEARN HOW TO Brand Your Idea",
     tagline: "Positioning, visual identity, and early customer acquisition.",
     duration: "75 Mins",
     level: "All Levels",
@@ -67,7 +67,7 @@ export const workshopsData: Workshop[] = [
   },
   {
     id: "ai-entrepreneurship",
-    title: "AI × Entrepreneurship",
+    title: "LEARN HOW TO AI × Entrepreneurship",
     tagline: "Harness modern AI agents to build 10x faster.",
     duration: "105 Mins",
     level: "Intermediate / Advanced",
