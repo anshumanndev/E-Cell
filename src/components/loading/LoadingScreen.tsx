@@ -21,7 +21,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           }, 300);
           return 100;
         }
-        const diff = Math.random() * 22 + 10;
+        const diff = Math.random() * 5 + 2;
         return Math.min(100, prev + diff);
       });
     }, 100);
@@ -60,11 +60,20 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               className="flex flex-col items-center mb-6"
             >
               <div className="flex items-center text-3xl font-display font-bold tracking-tight text-slate-900 mb-1">
-                <span>Illuminat</span>
+                <span>I</span>
+                <img 
+                  src="/images/symbol.png" 
+                  alt="ll" 
+                  className="inline-block h-[0.8em] w-auto mx-[0.05em] object-contain" 
+                />
+                <span>uminat</span>
                 <span className="text-teal-700">E</span>
               </div>
               <span className="text-xs tracking-[0.3em] font-mono uppercase text-slate-500">
                 E-CELL UIT PRAYAGRAJ
+              </span>
+              <span className="text-[10px] tracking-[0.2em] font-mono uppercase text-slate-400 mt-2">
+                Campus Ambassador: Arpita Mishra
               </span>
             </motion.div>
 
