@@ -104,7 +104,10 @@ export const Footer: React.FC = () => {
 
         {/* Bottom copyright & back to top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 E-Cell UIT. All rights reserved.</p>
+          <div className="flex flex-col gap-1">
+            <p>© 2026 E-Cell UIT. All rights reserved.</p>
+            <p>Designed by UI/UX designer & E-Cell Team</p>
+          </div>
           <div className="flex items-center gap-6">
             <a href="/#about" className="hover:text-[#0E7490]">About</a>
             <a href="/#contact" className="hover:text-[#0E7490]">Contact</a>
