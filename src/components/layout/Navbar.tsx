@@ -49,7 +49,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
           {/* Official E-CELL UIT Brand Logo on Top Left Corner */}
           <Link
             to="/"
-            className="group focus:outline-none focus:ring-2 focus:ring-[#0E7490]/30 rounded-xl transition-transform"
+            onClick={() => {
+              if (location.pathname === '/') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
+            className="group focus:outline-none focus:ring-2 focus:ring-[#0E7490]/30 rounded-xl transition-transform cursor-pointer"
           >
             <ECellLogo size="sm" showSubtitle={true} />
           </Link>

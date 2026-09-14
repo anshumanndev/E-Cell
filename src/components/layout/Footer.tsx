@@ -15,7 +15,15 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-100">
           {/* Col 1: Brand & Taglines */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="inline-block">
+            <Link 
+              to="/" 
+              onClick={() => {
+                if (window.location.pathname === '/') {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+              className="inline-block"
+            >
               <ECellLogo size="md" showSubtitle={true} />
             </Link>
             <p className="text-xs font-mono text-[#0E7490] tracking-widest uppercase font-bold">
