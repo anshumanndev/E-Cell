@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { QRCodeSVG } from 'qrcode.react';
 import confetti from 'canvas-confetti';
+import { IlluminateText } from '../effects/IlluminateText';
 import {
   X,
   CheckCircle2,
@@ -116,7 +117,7 @@ export const PassModal: React.FC<PassModalProps> = ({
                   </div>
 
                   <div className="text-xs text-slate-700 space-y-0.5 pt-1">
-                    <p><span className="font-bold">Event:</span> ILLUMINATE 2026</p>
+                    <p><span className="font-bold">Event:</span> <IlluminateText>ILLUMINATE 2026</IlluminateText></p>
                     <p><span className="font-bold">Date:</span> 30 September 2026 • 9:00 AM</p>
                     <p><span className="font-bold">Venue:</span> Auditorium, UIT Prayagraj</p>
                   </div>

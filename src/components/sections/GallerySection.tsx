@@ -1,8 +1,9 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { IlluminatEBrand } from '../effects/IlluminatEBrand';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Image as ImageIcon, Sparkles, X, ZoomIn, ArrowRight } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
+import { IlluminateText } from '../effects/IlluminateText';
 import { galleryItems, galleryCategories } from '../../data/galleryData';
 import { GalleryItem } from '../../types';
 
@@ -88,7 +89,7 @@ export const GallerySection: React.FC = () => {
 
                 <div>
                   <span className="text-[10px] font-mono text-teal-300 tracking-widest uppercase block mb-1">
-                    ILLUMINATE 2026
+                    <IlluminateText>ILLUMINATE 2026</IlluminateText>
                   </span>
                   <h3 className="text-lg font-display font-bold text-white mb-1">
                     {item.title}

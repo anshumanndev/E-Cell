@@ -1,5 +1,4 @@
 import React from 'react';
-import { IlluminateSymbol } from './IlluminateSymbol';
 
 interface IlluminatEBrandProps {
   className?: string;
@@ -11,7 +10,7 @@ interface IlluminatEBrandProps {
  * IlluminatEBrand
  * 
  * Renders the new ILLUMINATE logo exactly as requested:
- * The flame symbol is placed on the side of the full word "ILLUMINATE".
+ * The double LL is replaced by the provided flame symbol image.
  */
 export const IlluminatEBrand: React.FC<IlluminatEBrandProps> = ({ 
   className = '',
@@ -20,21 +19,27 @@ export const IlluminatEBrand: React.FC<IlluminatEBrandProps> = ({
 }) => {
   // Size mappings
   const sizeMap = {
-    sm: { height: 'h-6', textSize: 'text-lg', flameWidth: 'w-6' },
-    md: { height: 'h-8', textSize: 'text-2xl', flameWidth: 'w-8' },
-    lg: { height: 'h-12', textSize: 'text-4xl', flameWidth: 'w-12' },
-    xl: { height: 'h-16', textSize: 'text-6xl', flameWidth: 'w-16' },
-    hero: { height: 'h-20 sm:h-28 md:h-36', textSize: 'text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.5rem]', flameWidth: 'w-20 sm:w-28 md:w-36' },
+    sm: { textSize: 'text-lg' },
+    md: { textSize: 'text-2xl' },
+    lg: { textSize: 'text-4xl' },
+    xl: { textSize: 'text-6xl' },
+    hero: { textSize: 'text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.5rem]' },
   };
 
   const { textSize } = sizeMap[size];
   const colorClass = textColor === 'white' ? 'text-white drop-shadow-md' : 'text-[#2E1065]';
 
   return (
-    <span className={`inline-flex items-center gap-1 sm:gap-2 ${className}`}>
-      {/* The full text "ILLUMINATE" */}
-      <span className={`${textSize} font-sans font-black tracking-tight ${colorClass}`} style={{ letterSpacing: '-0.02em' }}>
-        ILLUMINATE
+    <span className={`inline-flex items-center ${className}`}>
+      {/* The text with image replacing LL */}
+      <span className={`${textSize} font-sans font-black tracking-tight flex items-center ${colorClass}`} style={{ letterSpacing: '-0.02em' }}>
+        I
+        <img 
+          src="/images/illuminate-ll.png" 
+          alt="LL" 
+          className="h-[1.1em] w-auto object-contain inline-block mx-[0.05em] -translate-y-[0.05em]" 
+        />
+        UMINATE
       </span>
     </span>
   );

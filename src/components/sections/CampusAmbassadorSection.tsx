@@ -1,7 +1,9 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trophy, ArrowRight, X, CheckCircle2, Send, Tag } from 'lucide-react';
+import { Trophy, ArrowRight, Tag, Users, CheckCircle2, ChevronRight, X, Sparkles, Network, Send } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
+import { AtmosphericGlow } from '../effects/AtmosphericGlow';
+import { IlluminateText } from '../effects/IlluminateText';
 import { MagneticButton } from '../effects/MagneticButton';
 import { featuredEvent } from '../../data/eventsData';
 
@@ -50,7 +52,7 @@ export const CampusAmbassadorSection: React.FC = () => {
             </h2>
 
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Become the official face of ILLUMINATE across your campus. Rally fellow innovators, build community credibility, and earn verified leadership honors.
+              <IlluminateText>Become the official face of ILLUMINATE across your campus. Rally fellow innovators, build community credibility, and earn verified leadership honors.</IlluminateText>
             </p>
 
             {/* Featured CA Highlight Badge */}
@@ -137,7 +139,7 @@ export const CampusAmbassadorSection: React.FC = () => {
               </div>
 
               <h3 className="text-2xl font-display font-black text-[#0F172A] mb-2">
-                Represent ILLUMINATE
+                <IlluminateText>Represent ILLUMINATE</IlluminateText>
               </h3>
               <p className="text-xs text-slate-600 mb-6">
                 Receive your custom referral code and begin leading your campus network.

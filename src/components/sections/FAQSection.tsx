@@ -1,8 +1,9 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HelpCircle, ChevronDown, Sparkles } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
 import { faqList } from '../../data/faqData';
+import { IlluminateText } from '../effects/IlluminateText';
 
 export const FAQSection: React.FC = () => {
   const [openIds, setOpenIds] = useState<string[]>([faqList[0].id]);
@@ -77,7 +78,7 @@ export const FAQSection: React.FC = () => {
                   className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus:outline-none"
                 >
                   <span className="text-base sm:text-lg font-display font-bold text-slate-900">
-                    {faq.question}
+                    <IlluminateText>{faq.question}</IlluminateText>
                   </span>
                   <div className={`p-1.5 rounded-full bg-slate-100 text-slate-600 transition-transform duration-300 ${
                     isOpen ? 'rotate-180 bg-teal-50 text-teal-700' : ''
@@ -96,7 +97,7 @@ export const FAQSection: React.FC = () => {
                       className="overflow-hidden"
                     >
                       <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
-                        {faq.answer}
+                        <IlluminateText>{faq.answer}</IlluminateText>
                       </div>
                     </motion.div>
                   )}

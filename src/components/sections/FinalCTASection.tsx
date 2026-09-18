@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles, Flame } from 'lucide-react';
@@ -6,6 +6,7 @@ import { MagneticButton } from '../effects/MagneticButton';
 import { AtmosphericGlow } from '../effects/AtmosphericGlow';
 import { LightPulse } from '../effects/LightPulse';
 import { IlluminatEBrand } from '../effects/IlluminatEBrand';
+import { IlluminateText } from '../effects/IlluminateText';
 
 interface FinalCTASectionProps {
   onOpenRegister?: () => void;
@@ -30,8 +31,8 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenRegister
             <span>ONE IDEA. ONE DECISION. ONE BEGINNING.</span>
           </div>
 
-          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold text-slate-900 tracking-tight leading-none">
-            ILLUMINATE YOUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 via-cyan-600 to-amber-600">IDEA.</span>
+          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-extrabold text-slate-900 tracking-tight leading-none flex items-center justify-center flex-wrap gap-x-4">
+            <span><IlluminateText>ILLUMINATE</IlluminateText> YOUR</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-700 via-cyan-600 to-amber-600">IDEA.</span>
           </h2>
 
           <p className="text-lg sm:text-xl text-teal-900 font-medium max-w-xl mx-auto">

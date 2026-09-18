@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { featuredEvent } from '../../data/eventsData';
 import { RegistrationSubmission } from '../../types';
+import { IlluminateText } from '../effects/IlluminateText';
 
 interface RegisterModalProps {
   isOpen: boolean;
@@ -196,7 +197,7 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                 Instant Conclave Pass Registration
               </span>
               <h3 className="text-2xl sm:text-3xl font-display font-black text-[#0F172A]">
-                Reserve Your ILLUMINATE Pass
+                <IlluminateText>Reserve Your ILLUMINATE Pass</IlluminateText>
               </h3>
               <p className="text-xs text-slate-600 mt-1">
                 E-Cell UIT • September 30, 2026 • United Institute of Technology, Prayagraj
@@ -498,7 +499,7 @@ export const RegisterModal: React.FC<RegisterModalProps> = ({
                     className="mt-0.5 rounded accent-[#0E7490]"
                   />
                   <label htmlFor="modalTerms" className="text-[11px] text-slate-600 leading-tight">
-                    I confirm my participation in ILLUMINATE 2026. This pass guarantees full-day keynotes, masterclasses, networking lunch, kit, and verified credential.
+                    <IlluminateText>I confirm my participation in ILLUMINATE 2026. This pass guarantees full-day keynotes, masterclasses, networking lunch, kit, and verified credential.</IlluminateText>
                   </label>
                 </div>
 

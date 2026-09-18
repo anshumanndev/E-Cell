@@ -1,5 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import { AtmosphericGlow } from '../effects/AtmosphericGlow';
+import { IlluminateText } from '../effects/IlluminateText';
 import { motion } from 'framer-motion';
 import { Code2, Palette, TrendingUp, Megaphone, Settings2, Users, Sparkles } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
@@ -26,7 +27,7 @@ export const CommunitySection: React.FC = () => {
             YOU DON'T BUILD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E7490] via-[#0D9488] to-[#D97706]">ALONE.</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3">
-            Different perspectives strengthen ideas. ILLUMINATE brings together six essential disciplines to forge complete startup founding teams.
+            <IlluminateText>Different perspectives strengthen ideas. ILLUMINATE brings together six essential disciplines to forge complete startup founding teams.</IlluminateText>
           </p>
         </div>
 

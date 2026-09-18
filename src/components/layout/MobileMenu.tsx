@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { X, ArrowRight, Sparkles } from 'lucide-react';
 import { ECellLogo } from '../effects/ECellLogo';
+import { IlluminateText } from '../effects/IlluminateText';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -84,7 +85,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 }}
                 className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-gradient-to-r from-[#0E7490] to-[#0D9488] text-white font-display font-bold text-sm tracking-wide shadow-glow-teal"
               >
-                <span>REGISTER FOR ILLUMINATE</span>
+                <span>REGISTER FOR <IlluminateText>ILLUMINATE</IlluminateText></span>
                 <ArrowRight size={16} />
               </button>
             ) : (
@@ -93,7 +94,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                 onClick={onClose}
                 className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-gradient-to-r from-[#0E7490] to-[#0D9488] text-white font-display font-bold text-sm tracking-wide shadow-glow-teal"
               >
-                <span>REGISTER FOR ILLUMINATE</span>
+                <span>REGISTER FOR <IlluminateText>ILLUMINATE</IlluminateText></span>
                 <ArrowRight size={16} />
               </Link>
             )}

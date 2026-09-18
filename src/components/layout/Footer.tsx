@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUp, Mail, MapPin, Phone, Instagram, Linkedin } from 'lucide-react';
 import { ECellLogo } from '../effects/ECellLogo';
+import { IlluminateText } from '../effects/IlluminateText';
 import { siteConfig } from '../../data/siteData';
 
 export const Footer: React.FC = () => {
@@ -63,7 +64,7 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-sm text-slate-600">
               <li><a href="/#hero" className="hover:text-[#0E7490] transition-colors">Home</a></li>
-              <li><a href="/#about" className="hover:text-[#0E7490] transition-colors">About ILLUMINATE</a></li>
+              <li><a href="/#about" className="hover:text-[#0E7490] transition-colors">About <IlluminateText>ILLUMINATE</IlluminateText></a></li>
               <li><a href="/#experience" className="hover:text-[#0E7490] transition-colors">The Journey</a></li>
               <li><a href="/#workshops" className="hover:text-[#0E7490] transition-colors">Master Workshops</a></li>
               <li><a href="/#goodies" className="hover:text-[#0E7490] transition-colors">Goodies Kit</a></li>

@@ -1,9 +1,10 @@
-﻿import React from 'react';
+import React from 'react';
 import { AtmosphericGlow } from '../effects/AtmosphericGlow';
 import { motion } from 'framer-motion';
 import { Gift, Briefcase, Book, Calendar, PenTool, Key, Image as ImageIcon } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
 import { goodiesData } from '../../data/goodiesData';
+import { IlluminateText } from '../effects/IlluminateText';
 
 export const GoodiesSection: React.FC = () => {
   const getIcon = (iconName: string) => {
@@ -30,7 +31,7 @@ export const GoodiesSection: React.FC = () => {
             THE OFFICIAL <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E7490] via-[#0D9488] to-[#D97706]">FOUNDER GOODIES KIT</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3">
-            Every registered attendee receives the curated ILLUMINATE 2026 welcome kit upon check-in at the UIT Auditorium.
+            <IlluminateText>Every registered attendee receives the curated ILLUMINATE 2026 welcome kit upon check-in at the UIT Auditorium.</IlluminateText>
           </p>
         </div>
 

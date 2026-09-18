@@ -1,9 +1,10 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, Lock, X, ShieldCheck } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
 import { speakersData } from '../../data/eventsData';
 import { Speaker } from '../../types';
+import { IlluminateText } from '../effects/IlluminateText';
 
 export const SpeakersSection: React.FC = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
@@ -133,7 +134,7 @@ export const SpeakersSection: React.FC = () => {
 
               <div className="flex items-center justify-between pt-4 border-t border-slate-100">
                 <span className="text-xs font-mono text-slate-500">
-                  ILLUMINATE 2026 Verified
+                  <IlluminateText>ILLUMINATE 2026 Verified</IlluminateText>
                 </span>
                 <button
                   onClick={() => setSelectedSpeaker(null)}

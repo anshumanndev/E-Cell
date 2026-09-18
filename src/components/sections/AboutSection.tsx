@@ -1,9 +1,10 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, ArrowRight, Zap, Lightbulb, Compass, Rocket } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
 import { AtmosphericGlow } from '../effects/AtmosphericGlow';
 import { IlluminatEBrand } from '../effects/IlluminatEBrand';
+import { IlluminateText } from '../effects/IlluminateText';
 
 export const AboutSection: React.FC = () => {
   const narrativePillars = [
@@ -53,7 +54,7 @@ export const AboutSection: React.FC = () => {
             </h2>
 
             <p className="text-base text-slate-600 leading-relaxed">
-              ILLUMINATE is not another passive seminar. It is an inflection point where engineering curiosity transforms into venture-scale action.
+              <IlluminateText>ILLUMINATE is not another passive seminar. It is an inflection point where engineering curiosity transforms into venture-scale action.</IlluminateText>
             </p>
 
             <div className="pt-2">
