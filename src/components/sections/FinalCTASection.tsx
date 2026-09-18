@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles, Flame } from 'lucide-react';
@@ -58,9 +58,9 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenRegister
               </Link>
             )}
 
-            <a href="#workshops">
+            <a href="#EVENTS">
               <MagneticButton variant="secondary" size="lg">
-                <span>EXPLORE WORKSHOPS</span>
+                <span>EXPLORE EVENTS</span>
                 <ArrowRight size={16} className="text-teal-700" />
               </MagneticButton>
             </a>

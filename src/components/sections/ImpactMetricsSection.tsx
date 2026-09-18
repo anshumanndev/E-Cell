@@ -21,7 +21,7 @@ export const ImpactMetricsSection: React.FC = () => {
             MEASURABLE <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-cyan-600 to-amber-600">SCALE</span>
           </h2>
           <p className="text-sm text-slate-600 mt-2">
-            The quantitative footprint of our startup incubation initiatives and skill workshops.
+            The quantitative footprint of our startup incubation initiatives and skill events.
           </p>
         </div>
 

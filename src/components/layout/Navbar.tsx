@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, ArrowRight, Sparkles } from 'lucide-react';
 import { ECellLogo } from '../effects/ECellLogo';
@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
   const navLinks = [
     { name: 'Home', href: '/#hero' },
     { name: 'About', href: '/#about' },
-    { name: 'Workshops', href: '/#workshops' },
+    { name: 'Events', href: '/#Events' },
     { name: 'Community', href: '/#community' },
     { name: 'Team', href: '/#team' },
     { name: 'Gallery', href: '/#gallery' },

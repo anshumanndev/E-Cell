@@ -2,15 +2,15 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Compass, Presentation, Layers, Sparkles, Cpu, Clock, CheckCircle2, ArrowRight } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
-import { workshopsData } from '../../data/workshopsData';
-import { Workshop } from '../../types';
+import { eventsListData } from '../../data/eventsListData';
+import { EventSession } from '../../types';
 
-interface WorkshopsSectionProps {
+interface EventsSectionProps {
   onOpenRegister?: () => void;
 }
 
-export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegister }) => {
-  const [activeWorkshop, setActiveWorkshop] = useState<Workshop>(workshopsData[0]);
+export const EventsSection: React.FC<EventsSectionProps> = ({ onOpenRegister }) => {
+  const [activeEventSession, setActiveEventSession] = useState<EventSession>(eventsListData[0]);
 
   const getIcon = (iconName: string) => {
     switch (iconName) {
@@ -24,7 +24,7 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
   };
 
   return (
-    <section id="workshops" className="relative py-8 lg:py-12 border-t border-slate-100/60 overflow-hidden select-none">
+    <section id="events" className="relative py-8 lg:py-12 border-t border-slate-100/60 overflow-hidden select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 lg:mb-8 gap-6">
           <div>
@@ -32,7 +32,7 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
               HANDS-ON MASTERCLASSES
             </SectionBadge>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-[#0F172A] tracking-tight">
-              SPECIALIZED <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E7490] via-[#0D9488] to-[#D97706]">WORKSHOP TRACKS</span>
+              SPECIALIZED <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0E7490] via-[#0D9488] to-[#D97706]">EventSession TRACKS</span>
             </h2>
           </div>
           <p className="text-sm text-slate-600 max-w-md">
@@ -42,14 +42,14 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
 
         {/* Masterclass Tabs & Detail View */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Workshop Tab Selector */}
+          {/* Left EventSession Tab Selector */}
           <div className="lg:col-span-5 space-y-3">
-            {workshopsData.map((workshop) => {
-              const isSelected = activeWorkshop.id === workshop.id;
+            {eventsListData.map((EventSession) => {
+              const isSelected = activeEventSession.id === EventSession.id;
               return (
                 <button
-                  key={workshop.id}
-                  onClick={() => setActiveWorkshop(workshop)}
+                  key={EventSession.id}
+                  onClick={() => setActiveEventSession(EventSession)}
                   className={`w-full text-left p-4 sm:p-5 rounded-2xl transition-all flex items-center justify-between border ${
                     isSelected
                       ? 'bg-white border-[#0E7490] shadow-md ring-2 ring-[#0E7490]/20'
@@ -64,14 +64,14 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
                           : 'bg-slate-100 text-slate-600'
                       }`}
                     >
-                      {getIcon(workshop.iconName)}
+                      {getIcon(EventSession.iconName)}
                     </div>
                     <div>
                       <h3 className="text-base font-display font-black text-[#0F172A]">
-                        {workshop.title}
+                        {EventSession.title}
                       </h3>
                       <p className="text-xs text-slate-500 font-mono">
-                        {workshop.duration} • {workshop.level}
+                        {EventSession.duration} • {EventSession.level}
                       </p>
                     </div>
                   </div>
@@ -86,11 +86,11 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
             })}
           </div>
 
-          {/* Right Selected Workshop Deep-Dive Panel */}
+          {/* Right Selected EventSession Deep-Dive Panel */}
           <div className="lg:col-span-7">
             <AnimatePresence mode="wait">
               <motion.div
-                key={activeWorkshop.id}
+                key={activeEventSession.id}
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
@@ -100,11 +100,11 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
                 <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200">
                   <div className="flex items-center gap-2">
                     <span className="px-3 py-1 rounded-full bg-[#0E7490]/10 border border-[#0E7490]/20 text-xs font-mono font-bold text-[#0E7490]">
-                      Track: {activeWorkshop.instructorTag}
+                      Track: {activeEventSession.instructorTag}
                     </span>
                     <span className="flex items-center gap-1 text-xs font-mono text-slate-500 font-bold">
                       <Clock size={12} className="text-[#0E7490]" />
-                      {activeWorkshop.duration}
+                      {activeEventSession.duration}
                     </span>
                   </div>
                   <span className="text-xs font-mono text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-lg border border-emerald-300 font-bold">
@@ -114,10 +114,10 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
 
                 <div>
                   <h3 className="text-2xl sm:text-3xl font-display font-black text-[#0F172A]">
-                    {activeWorkshop.title}
+                    {activeEventSession.title}
                   </h3>
                   <p className="text-sm sm:text-base text-[#0E7490] font-bold mt-1">
-                    {activeWorkshop.tagline}
+                    {activeEventSession.tagline}
                   </p>
                 </div>
 
@@ -126,7 +126,7 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
                     CURRICULUM BREAKDOWN:
                   </h4>
                   <div className="space-y-2.5">
-                    {activeWorkshop.topics.map((topic, i) => (
+                    {activeEventSession.topics.map((topic, i) => (
                       <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-slate-700">
                         <CheckCircle2 size={16} className="text-[#0E7490] shrink-0 mt-0.5" />
                         <span>{topic}</span>
@@ -143,7 +143,7 @@ export const WorkshopsSection: React.FC<WorkshopsSectionProps> = ({ onOpenRegist
                     onClick={onOpenRegister}
                     className="inline-flex items-center gap-1.5 text-xs font-display font-bold text-white bg-[#0E7490] hover:bg-[#083344] px-4 py-2 rounded-xl shadow-sm transition-all"
                   >
-                    <span>JOIN WORKSHOP</span>
+                    <span>JOIN EventSession</span>
                     <ArrowRight size={13} />
                   </button>
                 </div>

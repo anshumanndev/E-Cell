@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUp, Mail, MapPin, Phone, Instagram, Linkedin } from 'lucide-react';
 import { ECellLogo } from '../effects/ECellLogo';
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
               <li><a href="/#hero" className="hover:text-[#0E7490] transition-colors">Home</a></li>
               <li><a href="/#about" className="hover:text-[#0E7490] transition-colors">About <IlluminateText>ILLUMINATE</IlluminateText></a></li>
               <li><a href="/#experience" className="hover:text-[#0E7490] transition-colors">The Journey</a></li>
-              <li><a href="/#workshops" className="hover:text-[#0E7490] transition-colors">Master Workshops</a></li>
+              <li><a href="/#Events" className="hover:text-[#0E7490] transition-colors">Master Events</a></li>
               <li><a href="/#goodies" className="hover:text-[#0E7490] transition-colors">Goodies Kit</a></li>
             </ul>
           </div>
@@ -115,7 +115,7 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright & back to top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex flex-col gap-1.5">
-            <p>© 2026 E-Cell UIT. All rights reserved.</p>
+            <p>Â© 2026 E-Cell UIT. All rights reserved.</p>
             <p>
               Designed by{' '}
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="font-semibold text-slate-600 hover:text-[#0E7490] transition-colors underline decoration-slate-300 underline-offset-2 hover:decoration-[#0E7490]">UI/UX Designer 1</a>

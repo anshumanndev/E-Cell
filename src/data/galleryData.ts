@@ -3,7 +3,7 @@ import { GalleryItem } from '../types';
 export const galleryCategories = [
   'ALL',
   'EVENTS',
-  'WORKSHOPS',
+  
   'TEAM',
   'SPEAKERS',
   'COMPETITIONS',
@@ -23,7 +23,7 @@ export const galleryItems: GalleryItem[] = [
     id: "gal-2",
     title: "Hands-on Product Prototyping",
     subtitle: "Teams Rapidly Validating MVP Hypotheses",
-    category: "WORKSHOPS",
+    category: "EVENTS",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
     aspectRatio: "landscape"
   },

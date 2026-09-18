@@ -7,7 +7,7 @@ import { WhyIlluminateSection } from '../components/sections/WhyIlluminateSectio
 import { ExperienceSection } from '../components/sections/ExperienceSection';
 import { GoodiesSection } from '../components/sections/GoodiesSection';
 import { BenefitsSection } from '../components/sections/BenefitsSection';
-import { WorkshopsSection } from '../components/sections/WorkshopsSection';
+import { EventsSection } from '../components/sections/EventsSection';
 import { EntrepreneurJourneySection } from '../components/sections/EntrepreneurJourneySection';
 import { CommunitySection } from '../components/sections/CommunitySection';
 import { JoinECellSection } from '../components/sections/JoinECellSection';
@@ -67,7 +67,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
       <ExperienceSection />
       <GoodiesSection />
       <BenefitsSection />
-      <WorkshopsSection />
+      <EventsSection />
       <EntrepreneurJourneySection />
       <CommunitySection />
       <JoinECellSection />

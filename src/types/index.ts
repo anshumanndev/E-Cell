@@ -31,7 +31,7 @@ export interface Speaker {
   twitter?: string;
 }
 
-export interface Workshop {
+export interface EventSession {
   id: string;
   title: string;
   tagline: string;
@@ -71,7 +71,7 @@ export interface TeamMember {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'ALL' | 'EVENTS' | 'WORKSHOPS' | 'TEAM' | 'SPEAKERS' | 'COMPETITIONS' | 'CAMPUS';
+  category: 'ALL' | 'EVENTS' | 'TEAM' | 'SPEAKERS' | 'COMPETITIONS' | 'CAMPUS';
   subtitle: string;
   image: string;
   aspectRatio?: 'landscape' | 'portrait' | 'square';

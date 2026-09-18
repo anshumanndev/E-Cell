@@ -1,6 +1,6 @@
-import { Workshop } from '../types';
+﻿import { EventSession } from '../types';
 
-export const workshopsData: Workshop[] = [
+export const eventsListData: EventSession[] = [
   {
     id: "startup-101",
     title: "Startup 101",
@@ -67,7 +67,7 @@ export const workshopsData: Workshop[] = [
   },
   {
     id: "ai-entrepreneurship",
-    title: "LEARN HOW TO AI × Entrepreneurship",
+    title: "LEARN HOW TO AI Ã— Entrepreneurship",
     tagline: "Harness modern AI agents to build 10x faster.",
     duration: "105 Mins",
     level: "Intermediate / Advanced",
