@@ -80,6 +80,7 @@ export const teamMembers: TeamMember[] = [
     id: "team-12",
     name: "UI/UX Designer",
     role: "Visual & Product Design",
+    personName: "Anshumann Gupta",
     department: "Design",
     isVerified: false,
     linkedin: "https://linkedin.com"
@@ -88,9 +89,10 @@ export const teamMembers: TeamMember[] = [
     id: "team-13",
     name: "UI/UX Designer",
     role: "Visual & Product Design",
+    personName: "Aditya Rai",
     department: "Design",
     isVerified: false,
-    linkedin: "https://linkedin.com"
+    linkedin: "https://www.linkedin.com/in/aditya-rai-b43407374?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
   {
     id: "team-14",

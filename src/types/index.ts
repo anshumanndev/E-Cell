@@ -63,6 +63,7 @@ export interface TeamMember {
   id: string;
   name: string;
   role: string;
+  personName?: string;
   department: 'Leadership' | 'Events' | 'Marketing' | 'Technical' | 'Design' | 'Operations' | 'PR & Sponsorship';
   isVerified: boolean;
   linkedin?: string;

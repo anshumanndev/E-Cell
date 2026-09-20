@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, UserCheck, Lock } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
@@ -77,6 +77,11 @@ export const TeamSection: React.FC = () => {
                 <p className="text-xs font-mono text-[#0E7490] font-bold mt-0.5">
                   {member.role}
                 </p>
+                {member.personName && (
+                  <p className="text-sm italic text-slate-600 mt-1 font-medium">
+                    {member.personName}
+                  </p>
+                )}
               </div>
 
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500 font-semibold">
