@@ -6,12 +6,12 @@ export const siteConfig = {
   primaryTagline: "UNPLUG. INNOVATE. BREAK.",
   secondaryTagline: "Empowering the Next Generation of Changemakers.",
   description: "A premier platform where ambitious minds meet bold ideas, entrepreneurial thinking and opportunities to turn imagination into action.",
-  contactEmail: "info@united.ac.in",
+  contactEmail: "ecelluit70@gmail.com",
   contactPhone: "+91-9999707942",
   socials: {
     instagram: "https://instagram.com/ecell_uit",
     linkedin: "https://linkedin.com/company/ecell-uit",
-    email: "mailto:info@united.ac.in"
+    email: "mailto:ecelluit70@gmail.com"
   },
   institutionalStats: [
     { value: "12,000+", label: "Students", detail: "On campus learning community" },

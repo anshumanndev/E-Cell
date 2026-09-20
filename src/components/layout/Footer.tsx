@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUp, Mail, MapPin, Phone, Instagram, Linkedin } from 'lucide-react';
 import { ECellLogo } from '../effects/ECellLogo';
@@ -96,8 +96,8 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col gap-1.5">
                 <div className="flex items-center gap-2">
-                  <Phone size={14} className="text-[#0E7490] shrink-0" />
-                  <span>Campus Ambassador: +91 63860 87995</span>
+                  <Linkedin size={14} className="text-[#0E7490] shrink-0" />
+                  <span>Campus Ambassador: <a href="https://www.linkedin.com/in/arpita-mishra-6a012a381" target="_blank" rel="noreferrer" className="hover:text-[#0E7490] transition-colors">Arpita Mishra</a></span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={14} className="text-[#0E7490] shrink-0 opacity-0" />

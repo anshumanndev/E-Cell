@@ -7,7 +7,7 @@ export const featuredEvent: EventDetail = {
   tagline: "Empowering the Next Generation of Changemakers",
   description: "Join visionary startup founders, seasoned venture capitalists, and industry innovators direct from the IIT Bombay entrepreneurial ecosystem for an immersive day of high-impact keynotes, interactive pitch clinics, and hands-on workshops.",
   date: "2026-09-30",
-  formattedDate: "September 30, 2026",
+  formattedDate: "Last date of registration: September 30, 2026",
   time: "09:00 AM - 06:00 PM IST",
   venue: "Auditorium Complex, United Institute of Technology, Prayagraj",
   originalPrice: 799,
