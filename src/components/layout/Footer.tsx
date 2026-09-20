@@ -95,9 +95,12 @@ export const Footer: React.FC = () => {
                 <span>{siteConfig.location}</span>
               </div>
               <div className="flex flex-col gap-1.5">
-                <div className="flex items-center gap-2">
-                  <Linkedin size={14} className="text-[#0E7490] shrink-0" />
-                  <span>Campus Ambassador: <a href="https://www.linkedin.com/in/arpita-mishra-6a012a381" target="_blank" rel="noreferrer" className="hover:text-[#0E7490] transition-colors">Arpita Mishra</a></span>
+                <div className="flex items-start gap-2">
+                  <Linkedin size={14} className="text-[#0E7490] shrink-0 mt-1" />
+                  <div className="flex flex-col gap-1.5">
+                    <span>Campus Ambassador: <a href="https://www.linkedin.com/in/arpita-mishra-6a012a381" target="_blank" rel="noreferrer" className="hover:text-[#0E7490] transition-colors underline decoration-slate-300 underline-offset-2 hover:decoration-[#0E7490]">Arpita Mishra</a></span>
+                    <img src="/images/ca-qr.png" alt="Campus Ambassador LinkedIn QR" className="w-14 h-14 rounded border border-slate-200 mt-1" />
+                  </div>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={14} className="text-[#0E7490] shrink-0 opacity-0" />

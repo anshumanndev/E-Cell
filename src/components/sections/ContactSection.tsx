@@ -89,9 +89,10 @@ export const ContactSection: React.FC = () => {
                 <div className="flex flex-col gap-3">
                   <div>
                     <p className="font-semibold text-slate-900">Campus Ambassador</p>
-                    <a href="https://www.linkedin.com/in/arpita-mishra-6a012a381" target="_blank" rel="noreferrer" className="text-xs text-teal-700 hover:underline font-mono">
+                    <a href="https://www.linkedin.com/in/arpita-mishra-6a012a381" target="_blank" rel="noreferrer" className="text-xs text-teal-700 hover:underline font-mono block mb-2">
                       Arpita Mishra
                     </a>
+                    <img src="/images/ca-qr.png" alt="Campus Ambassador LinkedIn QR" className="w-20 h-20 rounded-md border border-slate-200" />
                   </div>
                 </div>
               </div>
