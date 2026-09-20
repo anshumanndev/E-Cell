@@ -119,11 +119,14 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex flex-col gap-1.5">
             <p>Â© 2026 E-Cell UIT. All rights reserved.</p>
-            <p>
+            <p className="pb-3">
               Designed by{' '}
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="font-semibold text-slate-600 hover:text-[#0E7490] transition-colors underline decoration-slate-300 underline-offset-2 hover:decoration-[#0E7490]">UI/UX Designer 1</a>
               {' & '}
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="font-semibold text-slate-600 hover:text-[#0E7490] transition-colors underline decoration-slate-300 underline-offset-2 hover:decoration-[#0E7490]">UI/UX Designer 2</a>
+              <a href="https://www.linkedin.com/in/aditya-rai-b43407374?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="font-semibold text-slate-600 hover:text-[#0E7490] transition-colors relative inline-block group">
+                <span className="underline decoration-slate-300 underline-offset-2 group-hover:decoration-[#0E7490]">UI/UX Designer 2</span>
+                <span className="absolute left-1/2 -translate-x-1/2 top-full text-[10px] italic text-slate-500 whitespace-nowrap mt-0.5">ADITYA RAI</span>
+              </a>
               {' & E-Cell Team'}
             </p>
           </div>
