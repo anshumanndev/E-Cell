@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Users, UserCheck, Lock } from 'lucide-react';
+import { Users, UserCheck, Lock, Linkedin } from 'lucide-react';
 import { SectionBadge } from '../effects/SectionBadge';
 import { teamMembers, teamDepartments } from '../../data/teamData';
 
@@ -78,15 +78,28 @@ export const TeamSection: React.FC = () => {
                   {member.role}
                 </p>
                 {member.personName && (
-                  <p className="text-sm italic text-slate-600 mt-1 font-medium">
-                    {member.personName}
-                  </p>
+                  member.linkedin && member.linkedin !== "https://linkedin.com" ? (
+                    <a href={member.linkedin} target="_blank" rel="noreferrer" className="block text-sm italic text-slate-600 mt-1 font-medium hover:text-[#0E7490] hover:underline transition-colors">
+                      {member.personName}
+                    </a>
+                  ) : (
+                    <p className="text-sm italic text-slate-600 mt-1 font-medium">
+                      {member.personName}
+                    </p>
+                  )
                 )}
               </div>
 
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500 font-semibold">
                 <span>{member.department}</span>
-                <span className="text-emerald-700 font-bold">● Active</span>
+                <div className="flex items-center gap-2.5">
+                  {member.linkedin && member.linkedin !== "https://linkedin.com" && (
+                    <a href={member.linkedin} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#0E7490] transition-colors" title="LinkedIn Profile">
+                      <Linkedin size={14} />
+                    </a>
+                  )}
+                  <span className="text-emerald-700 font-bold">● Active</span>
+                </div>
               </div>
             </motion.div>
           ))}
