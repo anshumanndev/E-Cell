@@ -24,13 +24,23 @@ export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onOpenRegister
           </span>
         </div>
 
-        <button
-          onClick={onOpenRegister}
-          className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#0E7490] to-[#0D9488] text-white font-display font-bold text-xs tracking-wide shadow-glow-teal active:scale-95 transition-transform"
-        >
-          <span>REGISTER NOW</span>
-          <ArrowRight size={14} />
-        </button>
+        {onOpenRegister ? (
+          <button
+            onClick={onOpenRegister}
+            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#0E7490] to-[#0D9488] text-white font-display font-bold text-xs tracking-wide shadow-glow-teal active:scale-95 transition-transform"
+          >
+            <span>REGISTER NOW</span>
+            <ArrowRight size={14} />
+          </button>
+        ) : (
+          <a
+            href="https://reg.icampuserp.in/Form1019.aspx"
+            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#0E7490] to-[#0D9488] text-white font-display font-bold text-xs tracking-wide shadow-glow-teal active:scale-95 transition-transform"
+          >
+            <span>REGISTER NOW</span>
+            <ArrowRight size={14} />
+          </a>
+        )}
       </div>
     </div>
   );

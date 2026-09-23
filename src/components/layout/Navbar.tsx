@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, ArrowRight, Sparkles } from 'lucide-react';
 import { ECellLogo } from '../effects/ECellLogo';
@@ -78,13 +78,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                 <ArrowRight size={14} className="hidden sm:inline" />
               </button>
             ) : (
-              <Link
-                to="/register"
+              <a
+                href="https://reg.icampuserp.in/Form1019.aspx"
                 className="relative inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-display font-bold text-white bg-gradient-to-r from-[#0E7490] to-[#0D9488] hover:from-[#164E63] hover:to-[#0E7490] shadow-glow-teal transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>REGISTER NOW</span>
                 <ArrowRight size={14} className="hidden sm:inline" />
-              </Link>
+              </a>
             )}
 
             {/* Mobile Menu Toggle Button */}

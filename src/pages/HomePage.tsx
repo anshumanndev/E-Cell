@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { HeroSection } from '../components/sections/HeroSection';
 import { AboutSection } from '../components/sections/AboutSection';
 import { ECellConnectionSection } from '../components/sections/ECellConnectionSection';
@@ -45,7 +45,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
   };
 
   const handleOpenRegister = () => {
-    setIsRegisterOpen(true);
+    window.location.href = "https://reg.icampuserp.in/Form1019.aspx";
   };
 
   const handleRegisterSuccess = (submission: RegistrationSubmission) => {
