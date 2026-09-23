@@ -45,7 +45,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
   };
 
   const handleOpenRegister = () => {
-    window.location.href = "https://reg.icampuserp.in/Form1019.aspx";
+    window.open("https://reg.icampuserp.in/Form1019.aspx", "_blank", "noopener,noreferrer");
   };
 
   const handleRegisterSuccess = (submission: RegistrationSubmission) => {

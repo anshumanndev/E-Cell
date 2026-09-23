@@ -80,6 +80,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
             ) : (
               <a
                 href="https://reg.icampuserp.in/Form1019.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-display font-bold text-white bg-gradient-to-r from-[#0E7490] to-[#0D9488] hover:from-[#164E63] hover:to-[#0E7490] shadow-glow-teal transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>REGISTER NOW</span>

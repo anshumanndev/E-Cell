@@ -50,7 +50,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenRegister
                 <ArrowRight size={18} />
               </MagneticButton>
             ) : (
-              <a href="https://reg.icampuserp.in/Form1019.aspx">
+              <a href="https://reg.icampuserp.in/Form1019.aspx" target="_blank" rel="noopener noreferrer">
                 <MagneticButton variant="primary" size="lg">
                   <span>JOIN THE MOVEMENT</span>
                   <ArrowRight size={18} />

@@ -91,6 +91,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
             ) : (
               <a
                 href="https://reg.icampuserp.in/Form1019.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onClose}
                 className="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-gradient-to-r from-[#0E7490] to-[#0D9488] text-white font-display font-bold text-sm tracking-wide shadow-glow-teal"
               >
